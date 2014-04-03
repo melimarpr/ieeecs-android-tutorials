@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/ab_finish" android:orderInCategory="1000" android:showAsAction="always" android:title="@string/ab_finish"></item>
+    <item android:id="@+id/ab_dialog" android:showAsAction="always" android:title="@string/ab_dialog" android:orderInCategory="1200"></item>
+
+</menu>
+<!-- From: file:/Users/enrique/Documents/workshops/ieeecs-android-april2014/ieeecs-android-tutorials/Part1/LifecycleDemo(Sample2)/app/src/main/res/menu/main.xml -->
