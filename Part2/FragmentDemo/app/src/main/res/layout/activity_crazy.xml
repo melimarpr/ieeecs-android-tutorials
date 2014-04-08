@@ -1,0 +1,33 @@
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <fragment class="mmarquezpr.fragmentdemo.app.RedFragment"
+            android:id="@+id/titlesRed"
+            android:layout_width="match_parent" android:layout_height="match_parent" />
+        <fragment class="mmarquezpr.fragmentdemo.app.CrazyFragment"
+            android:id="@+id/titlesCrazy"
+            android:layout_width="match_parent" android:layout_height="match_parent" />
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <fragment class="mmarquezpr.fragmentdemo.app.CrazyFragment"
+            android:id="@+id/titlesCrazy2"
+            android:layout_width="match_parent" android:layout_height="match_parent" />
+        <fragment class="mmarquezpr.fragmentdemo.app.GreenFragment"
+            android:id="@+id/titlesGreen"
+            android:layout_width="match_parent" android:layout_height="match_parent" />
+        </TableRow>
+</TableLayout>

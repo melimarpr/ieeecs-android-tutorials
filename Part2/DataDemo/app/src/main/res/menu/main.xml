@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mmarquezpr.datademo.app.MainActivity" >
+
+    <item android:id="@+id/abSharedPref"
+        android:title="SharedPreferences"
+        android:orderInCategory="200"
+        android:showAsAction="always" />
+    <item android:id="@+id/abFactory"
+        android:title="Factory"
+        android:orderInCategory="300"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/abIntentFragment"
+        android:title="Intent Fragment"
+        android:showAsAction="always"
+        android:orderInCategory="500"/>
+    <item
+        android:id="@+id/abIntentActivity"
+        android:title="Intent Activity"
+        android:showAsAction="always"
+        android:orderInCategory="600"/>
+</menu>
