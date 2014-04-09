@@ -13,6 +13,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.getActionBar();
     }
 
 
@@ -32,13 +33,19 @@ public class MainActivity extends Activity {
         int id = item.getItemId();
         switch (id){
             case R.id.abRed:
+//
+                /* FragmentManager fragmentManager = this.getFragmentManager();
+//                FragmentTransaction ft = fragmentManager.beginTransaction();
+//                ft.add(R.id.container, new RedFragment());
+//                ft.commit();*/
+
                 getFragmentManager().beginTransaction()
-                        .add(R.id.container, new RedFragment())
+                        .replace(R.id.container, new RedFragment())
                         .commit();
                 break;
             case R.id.abGreen:
                 getFragmentManager().beginTransaction()
-                        .add(R.id.container, new GreenFragment())
+                        .replace(R.id.container, new GreenFragment())
                         .commit();
                 break;
             case R.id.abCrazy:

@@ -11,6 +11,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends Activity {
 
+    private String str = "Abc";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +73,7 @@ public class MainActivity extends Activity {
 
 
         getFragmentManager().beginTransaction()
-                .replace(R.id.container, FactoryFragment.getInstance("Factory String"))
+                .replace(R.id.container, FactoryFragment.getInstance(str))
                 .commit();
 
     }
@@ -80,7 +81,7 @@ public class MainActivity extends Activity {
     private void intentActitvityListener(){
 
         Bundle bnd = new Bundle();
-        bnd.putString("FRAG_KEY", "String");
+        bnd.putString("FRAG_KEY", "String2");
 
         Intent intent = new Intent(this, DataActivity.class);
         intent.putExtras(bnd);

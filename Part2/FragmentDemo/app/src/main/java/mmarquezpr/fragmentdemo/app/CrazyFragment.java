@@ -26,7 +26,7 @@ public class CrazyFragment extends Fragment {
         // Inflate the layout for this fragment
 
         view = inflater.inflate(R.layout.fragment_crazy, container, false);
-        view.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+        view.setBackgroundColor(getResources().getColor(android.R.color.holo_purple));
 
         return view;
     }
